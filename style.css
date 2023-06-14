@@ -18,7 +18,7 @@ header img {
   width: 30%;
 }
 
-.section__location {
+.info__location {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -26,10 +26,10 @@ header img {
   background-color: rgb(234, 234, 234);
   width: 100vw;
 }
-.section i {
+.info i {
   margin-right: 15px;
 }
-.section__explore {
+.info__explore {
   background-color: rgb(249, 249, 249);
   margin: 0;
   width: 100vw;
@@ -38,10 +38,10 @@ header img {
   justify-content: center;
   align-items: center;
 }
-.section__explore h3 {
+.info__explore h3 {
   margin-top: 30px;
 }
-.section__explore p {
+.info__explore p {
   width: 80vw;
   text-align: center;
   line-height: 20px;
@@ -49,7 +49,7 @@ header img {
   margin-bottom: 30px;
   font-weight: 400;
 }
-.section__explore .btn {
+.info__explore button {
   margin-bottom: 40px;
   padding: 12px 20px;
   border-radius: 30px;
@@ -59,19 +59,20 @@ header img {
   box-shadow: #8f8e8e 1px 3px 30px 0px;
   cursor: pointer;
 }
-.section__explore .btn:hover {
+.info__explore button:hover {
+  cursor: pointer;
   background-image: none;
   background-color: #cb6ac2;
   box-shadow: #605f5f 1px 3px 30px 0px;
 }
 
-.section__guide {
+.guide {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 30px 30px 30px 40px;
 }
-.section__guide .step {
+.guide .step {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -82,7 +83,7 @@ header img {
   color: rgb(48, 48, 48);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.section__guide .step p:first-child {
+.guide .step p:first-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,16 +95,16 @@ header img {
   width: 32px;
   height: 32px;
 }
-.section__guide .step i {
+.guide .step i {
   padding: 20px;
 }
-.section__guide .step .fa-mobile {
+.guide .step .fa-mobile {
   font-size: 25px;
 }
-.section__guide .step:hover {
+.guide .step:hover {
   background-color: rgb(243, 238, 254);
 }
-.section__guide .step:hover i {
+.guide .step:hover i {
   color: #9356DC;
 }
 
@@ -301,17 +302,21 @@ footer ul li a i {
 .menu__items h4 {
   margin: 0;
   margin-bottom: 5px;
-  width: 80%;
+  width: 100%;
 }
 .menu__items p {
   margin: 0;
   font-weight: 100;
-  width: 75%;
+  white-space: nowrap;
+  width: 77%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__items span {
   position: absolute;
   bottom: 16px;
   right: 16px;
+  font-weight: 400;
 }
 .menu__items .tick {
   opacity: 0;
@@ -394,7 +399,7 @@ footer ul li a i {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(116, 116, 127, 0.5);
+  background-color: white;
   width: 100%;
   height: 100%;
   animation: fade-away 2s forwards;
